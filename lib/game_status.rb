@@ -55,7 +55,13 @@ def over?(board)
 end
 
 def winner(board)
+<<<<<<< HEAD
   if winning_combo = won?(board)
     board[winning_combo.first]
+=======
+  if won?(board) == true
+    letter = board[combo[0]]
+    return letter
+>>>>>>> 4a9c880d216b380298942efe89979e70e81fd453
   end
 end
